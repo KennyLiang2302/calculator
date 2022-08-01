@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.calculator {
+  display: flex;
+  background: black;
+  flex-direction: column;
+  width: 180px;
+  height: 250px;
+  padding: 10px;
+}
+
+.display {
+  display: flex;
+  background: black;
+  font-size: larger;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 0px;
+  padding-right: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+button,
+.display {
+  flex: 1 1 0px;
+  color: white;
+  margin: 2px;
+}
+
+.bigButton {
+  flex: 2.8 1 0px;
+}
+
+button.op,
+.equal {
+  background: orange;
+}
+
+button.number,
+.dot {
+  background: gray;
+}
+
+button.action {
+  background: lightgray;
+  color: black;
+}
+
+.clicking {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
